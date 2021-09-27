@@ -21,7 +21,7 @@ router.get("/", async function (req, res) {
 router.get('/test', async function (req, res) {
 
     let script = "SELECT * FROM Test";
-    let results = await pool.queryClanersProd(script);
+    let results = await pool.queryPrueba2(script);
     console.log(results);
     res.json(results);
 });
